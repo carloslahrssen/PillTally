@@ -1,0 +1,291 @@
+
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	box-shadow: -1px 0 4px 0 #e2e2e2;
+	border-right: 1px solid #e2e2e2;
+	border-left: 1px solid #e2e2e2;
+}
+
+#nav {
+	padding: 10px;
+	margin: 10px;
+	background-color: #222D34;
+}
+
+.wrapper {
+	overflow: auto;
+	height: 100%;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.2;
+	margin: 1%;
+}
+
+#footer {
+	background: #fff;
+	padding: 10px;
+	margin-top: 130px;
+	border-top: 1px solid #94c6e0;
+}
+.footer-text {
+	opacity: 0.3;
+}
+
+h3 {
+	padding: 1.5em 0 .5em;
+}
+
+/* --- Avatar Section */
+.avatar-wrap {
+	margin: 2%;
+}
+.avatar img {
+    height: 120px;
+    width: 120px;
+}
+.avatar-welcome {
+	color: #7e878d;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	padding-right: 10px;
+}
+
+/* LOGO 
+
+.pilltally {
+	float: right;
+}
+
+*/
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+								/* .col:first-child { margin-left: 0; } */
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+
+/*  GRID OF SEVEN  */
+.span_7_of_7 {
+	width: 100%;
+}
+
+.span_6_of_7 {
+  	width: 85.48%;
+}
+
+.span_5_of_7 {
+  	width: 70.97%;
+}
+
+.span_4_of_7 {
+  	width: 56.45%;
+}
+
+.span_3_of_7 {
+  	width: 41.94%;
+}
+
+.span_2_of_7 {
+  	width: 27.42%;
+}
+/* changed from 12.91 due to padding */
+.span_1_of_7 {
+  	width: 12%;
+  	height: 85px;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_7, .span_2_of_7, .span_3_of_7, .span_4_of_7, .span_5_of_7, .span_6_of_7, .span_7_of_7 { width: 100%; }
+}
+
+
+/* --- Misc */
+.head {
+    color: #51616b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin: 2%;
+    padding-top: 28px;
+}
+.sub-head {
+    color: #0f77ad;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+
+/* --- Pill Box Area */
+
+.pill-wrapper {
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.pill-contain {
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #94c6e0;
+}
+
+.pill-date {
+    border-bottom: 2px solid #94c6e0;
+    line-height: 1.5;
+    color: #51616b;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+
+.fill-area {
+    background-color: #ffffff;
+    height: 100%;
+    color: #f5f5f5;
+    font-size: 35px;
+    padding: 5%;
+}
+
+/* Mini Overviews */
+
+.pretty-wrapper {
+	padding-top: 15px !important;
+	padding-bottom: 85px !important;
+	background-image: url(http://wp.swlabs.co/medicplus/wp-content/uploads/2016/05/background-pattern-2.jpg?id=116) !important;
+	background-position: 0 0 !important;
+}
+
+
+.description-counter {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #51616b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-right: 8px;
+}
+.time-counter {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/* --- Overview columns */
+.column-left{ float: left; width: 33%; }
+.column-right{ float: right; width: 33%; }
+.column-center{ display: inline-block; width: 33%; }
+
+
+.container {
+	text-align: center;
+}
+
+
+/* -------- Leave Note -------- */
+
+.leave-note-wrap {
+	position: relative;
+	border-left: 2px solid #94c6e0;
+	border-right: 2px solid #94c6e0;
+	border-bottom: 2px solid #94c6e0;
+	text-align: center;
+	font-family: 'montserrat', sans-serif;
+	padding: 30px 0 23px;
+}
+.leave-note {
+
+}
+
+
+
+
+/* Reusable Classes */
+
+.center-me {
+	text-align: center;
+}
+.right-me {
+	text-align: right;
+}
+
+.spacer-top {
+	padding-top: 30px;
+}
+.spacer-bottom {
+	padding-bottom: 30px;
+}
+
+.spacer {
+	padding-top: 45px;
+}
+
+.pad-me {
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 40px;
+}
+
+.green-text {
+	color: #b7c439;
+}
+.red-text {
+	color: #f04e4e;
+}
+.light-blue-text {
+	color: #38cadb;
+}
+.whiteish-text {
+	color: #d3dfd3;
+}
+.float-left {
+	float: left;
+}
+.lighter {
+	opacity: 0.5;
+}
+
+
+/* --- BUTTON ONLY */
+
+button.start-game {
+	color: #5fcf80;
+	background-color: transparent;
+    border: 2px solid #5fcf80;
+    font-size: 21px;
+    padding: 6px 18px;
+}
+button.start-game:hover {
+    color: #34ad58;
+    cursor: pointer;
+    border-color: #34ad58;
+}
