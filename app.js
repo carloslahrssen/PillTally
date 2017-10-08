@@ -3,7 +3,7 @@ var request = require('request');
 var axios = require('axios');
 var FormData = require('form-data');
 var app = express();
-var form = new FormData();
+var formData = new FormData();
 
 
 function getToken(){
@@ -60,28 +60,14 @@ app.get('/test', (req, res) => {
 
 app.get('/revise', (req, res) => {
 	const id = 228479;
-	form.append("file", "<html><head></head><body><h1>Test</h1></body></html>", {
-		contentType: 'text/html',
-		filename: 'html1.html'
-	});
-	console.log(form);
-	api.post(`/documents/${id}/revisions/321671/content`, form, 
-	{
-		headers: {
-			'Content-Type': 'multipart/form-data boundary=' + form.getBoundary()
-		}
-	}
-	 )
+	formData.append('file','<html></html>');
+	api.post(`https://api.powerdms.com/v1/documents/${id}/revisions`, formData)
 		.then(data => res.json(data.data))
 		.catch(err => console.log(err) && res.json({err: 'afafafn adg sf'}));	
 });
 
 app.get('/', function(req,res){
 	res.render('index');
-});
-
-app.get('/addInfo', function(req, res){
-
 });
 
 app.listen(3000, function(){
